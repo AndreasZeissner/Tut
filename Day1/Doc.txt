@@ -1,10 +1,10 @@
-day1.html
+day1.html -> 
 	Unsere Ausgabe, auf der unsere WebApp läuft. 
 
 	Angular läuft in etwa so ab
 		-> Div (oder grds jedes andere html Element) mit ng-app="[Name Deiner App]"
 		-> Das ist quasi der Bereich in dem alles Funktionalitäten deiner App laufen können
-				Beispiel: Zeile 7 day1.html
+				Beispiel: Zeile 18 day1.html
 		-> Funktionalitäten werden in Services beschrieben und dann via Controller an deine View übergeben
 
 	Das Day1Module.js enthällt unsere App 
@@ -19,31 +19,3 @@ day1.html
 
 
 
-[Exkurs: Vererbung]
-	OOP, also objektorientierte Programmierung lebt von Vererbung
-	Vererbung bedeutet, dass man eine Klasse schreibt, also bsw ein Auto und davon Unterklassen bildet, die zumindest mal ein Auto sind
-
-	Bsp: Klasse Auto
-				name : String
-				marke : String
-				reifen : int 
-
-		-> In einem Programm könnte man dann (natürlich mit etwas mehr Aufwand, hier handelt es sich um so etwas wie Pseudocode) ein Objekt der Klasse Auto instanziieren: 	Object Nissan = new Auto("Nissan", "Primera", 4);
-										-> Man erstellt eine Variable (hier ein Object, das ist etwas Java spezifischer in JavaScript würde 
-											man das Object durch var ersetzen. JS ist nicht typsicher es reicht daher var Nissan ... um eine Variable zu erzeugen und zu belegen)
-										-> mit new (new ist eigentlich in jeder Sprache ein Keyword!) wird ein neues Auto-Objekt erzeugt
-										-> Auto("Nissan", "Primera", 4) ruft die Konstruktorfunktion der Klasse Auto auf. Diese belegt nun 		die in der Klasse beschriebenen Attribute
-
-		Soweit ja ganz nett, aber was ist, wenn ich jetzt meine Autos, die mein Programm verwendet noch untershceiden will. Beipielsweise könnte ich Benzinautos und Elektroautos unterscheiden
-			-> Egal ob Benzin oder Elektro, es sind beides Autos, sie haben Namen, sind von einem Hersteller und haben Reifen
-			-> Daher kann man Auto als Superklasse ansehen und diese für die Unterklassen vererben
-
-				Elektroauto extends Auto 				Benzinauto extends Auto 				
-					kwH : int 								litr/10km : int
-
-			Beide sind Autos, aber spezieller, als nur ein Auto
-				-> Ob man nicht einfach ein neues Attribut der Klasse Auto hinzufügt, mit dem man zwischen dem Kraftstoff unterscheidet hängt 	immer davon ab, was man für ein Programm baut und ob es sinnvoll, bzw notwendig ist
-			Ein Elektroauto würde man dann so erzeugen: 
-						Object Honda_elektro = new Elektroauto("Honda", "Civic", 4, 12); 
-
-			

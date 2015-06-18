@@ -22,4 +22,30 @@ angular.module('MyApp', []) // unser Modul, wie man es benennt hängt davon ab, 
 			"marke": "Civic",
 			"reifen": 4
 		}
+
+		// Datentypen, die du immer wieder brauchen wirst: 
+		var integer = 1; 
+		/*
+			Integer ist eine einfache Zahl, ohne Nachkommastellen
+			Wird immer wieder auch zum durchgehen irgendwelcher Schleifen benötigt
+			JavaScript hat keine Typsicherheit. In anderen Sprachen, wie etwa Java gibt es noch Float, double, etc 
+			JS kennt das in sofern auch, dass man einfach 
+				var float = 1.12; schreiben würde um Nachkommastellen zu beachten 
+				Java beispielsweise kennt int nur als ganzzahlige zahlen
+				wollte man einen float nutzen müsste man schreiben: 
+					float meinFloat = 1.12; 
+					-> Typsicherheit
+		*/
+		var Stringa = "Hallo"; 
+		/*
+			Der String ist einfacher Text, beachte die "" <- 
+		*/
+		var StringMitHochkomma = "\"Will man Hochkommata ausgeben, muss man sie vorher maskieren\"";
+
+		$scope.array = [1,2,3,4,5,6]; 
+		/*
+			Arrays sind Listen von Daten, die Indexiert sind
+			will man bsw auf das Element 3 zugreifen, würde man array[2] nutzen, da der Index bei 0 beginnt
+		*/ 
+
 	}]);
