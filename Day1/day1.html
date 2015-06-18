@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+	<html>
+		<head> 
+			<title> DAY 1 </title>
+
+			<!-- Das hier braucht man um Bootstrap zu verwenden. Ein Framework um schnell und einfach schöne Websites zu generieren --> 
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+			<link rel="stylesheet" href="main.css">
+
+
+
+		</head>
+		<body> 
+			<div class="container background" ng-app="MyApp">
+					<div class="row" ng-controller="MyCtrl">
+						<div class="col col-md-3">
+							<img src="{{einAuto.image}}" style="width: 100%">
+						</div>
+						<div id="content" class="col col-md-5">
+							{{einAuto.marke}} </br>
+							{{einAuto.name}}
+
+						</div>
+					</div>
+			</div>
+
+
+			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+			<script src="Day1Module.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		</body>
+	</html> 

@@ -1,0 +1,30 @@
+/*
+	CSS
+	Dient dazu Websites so aussehen zu lassen, wie du es willst.
+	Elemente auf der Website können auf verschiedene Arten angesprochen werden 
+
+	. <- bsw ist eine Klasse
+
+
+*/ 
+
+
+
+/*
+	Alle Elemente der Website mit der Klasse background werden angesprochen
+*/
+.background {
+	background-color: grey; 
+	border: thin black solid;
+}
+
+
+
+
+/*
+	Alle Elemente der Website mit der ID content werden angesprochen
+*/
+#content {
+	background-color: red; 
+	border:thin black solid;
+}
